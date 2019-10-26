@@ -2,4 +2,6 @@
 
 num_1 = int(input())
 num_2_str = input()
-print(num_1 * int(num_2_str[2]), num_1 * int(num_2_str[1]), num_1 * int(num_2_str[0]), num_1 * int(num_2_str))
+for i in num_2_str[::-1]:
+    print(num_1 * int(i))
+print(num_1 * int(num_2_str))
